@@ -124,11 +124,64 @@ body{
     transition: transform 0.001s ease-in-out; 
     margin-top: 410px;
     margin-bottom: 20px;
+    width: 100%;
   }
   
   .whale-image {
     width: 150px; 
     height: auto;
     transform: rotate(270deg);
+  }
+
+  .gameOverOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    height: 620px;
+    background-color: rgba(0, 0, 0, 0.636); /* Capa semitransparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    margin-left: 350px;
+    margin-top: 57px;
+  }
+
+  .gameOverOverlay h1{
+    font-size: 80px;
+    position: absolute;
+    background: linear-gradient( #006cbf,#dcdcdc);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-family: "Press Start 2P", monospace;
+    margin-bottom: 250px;
+  }
+    
+  .restartButton{
+    position: absolute;
+    font-size: 25px;
+    text-shadow: 0 0 black, 0 2px black, 2px 0 black, 0 0 black;
+    font-family: "Press Start 2P", monospace;
+    background-color: #006cbf;
+    color: white;
+    border: 2px solid white;
+    border-radius: 14px;
+    padding: 6px;
+    
+  }
+  
+  .game-over-text {
+    text-align: center;
+    color: white;
+  }
+  
+  .game-over-text h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .game-over-text p {
+    font-size: 1.5rem;
   }
   
