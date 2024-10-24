@@ -1,0 +1,134 @@
+body{
+   background-color: rgb(34, 34, 34);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.gameContent{
+    background-image: url('../assets/images/background3.png');
+    width: 1000px;
+    height: 620px;
+    background-size: cover;
+    margin-top: 50px;
+    display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#footer{
+    width: 1000px;
+    height: 100px;
+}
+
+.overlay{
+    background-color: rgba(31, 31, 31, 0.593);
+    width: 1000px;
+    height: 620px;
+    position: absolute;
+}
+
+.blink {
+  font-size: 80px;
+  background: linear-gradient( #006cbf,#dcdcdc);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  font-family: "Press Start 2P", monospace;
+  }
+
+.subtitle {
+    animation: blinkerGradient 2s ease-in-out infinite;
+    transform: translateY( -50%);
+    font-size: 25px;
+    text-shadow: 0 0 black, 0 2px black, 2px 0 black, 0 0 black;
+    font-family: "Press Start 2P", monospace;
+    background-color: #006cbf;
+    color: white;
+    border: 2px solid white;
+    border-radius: 14px;
+    padding: 6px;
+    margin-bottom: 90px;
+  }
+  
+  @keyframes blinkerGradient {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.info{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+#controls{
+    margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; 
+  font-family: "Press Start 2P", monospace;
+  font-size: 16px;
+  color: #ffffff; 
+}
+
+.control-item {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+  }
+  
+  .key {
+    padding: 5px 10px;
+    border: 2px solid #0051ff; 
+    color: #ffffff; 
+    background-color: transparent;
+    border-radius: 3px; 
+    text-shadow: 1px 1px 0px black, -1px -1px 0px black, -1px 1px 0px black, 1px -1px 0px black;
+  }
+  
+  span.control-item {
+    color: #ffffff; 
+  }
+  
+  #controls span {
+    text-shadow: 1px 1px 2px black;
+  }
+  .overlay, .info {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    pointer-events: none; 
+  }
+
+  .whale-container {
+    position: relative;
+    transform: translateX(-50%);
+    transition: transform 0.001s ease-in-out; 
+    margin-top: 410px;
+    margin-bottom: 20px;
+  }
+  
+  .whale-image {
+    width: 150px; 
+    height: auto;
+    transform: rotate(270deg);
+  }
+  
