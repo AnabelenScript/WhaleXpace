@@ -35,6 +35,7 @@ function GamePage() {
     }
   };
   useEffect(() => {
+    console.log('poisition en equiz: ', document.getElementById('game-frame').getBoundingClientRect().left)
     if (isGameStarted) {
       const meteoriteInterval = setInterval(() => {
         setMeteorites((prevMeteorites) =>
@@ -184,7 +185,7 @@ function GamePage() {
 
   return (
     <div>
-      <div
+      <div id="game-frame"
         className={`gameContent ${currentBackground}`}
         style={{ backgroundPositionY: `${backgroundPosition}px` }}
       >
@@ -212,7 +213,7 @@ function GamePage() {
               className="meteorite"
               style={{
                 position: 'absolute',
-                left: `${meteorite.x}px`,
+                left: `${document.getElementById('game-frame').getBoundingClientRect().left + meteorite.x}px`,
                 top: `${meteorite.y}px`,
                 width: '90px',
                 height: '90px',

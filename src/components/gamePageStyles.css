@@ -5,13 +5,18 @@ body{
    align-items: center;
 }
 
+#game-frame {
+  overflow: hidden;
+  position: relative;
+}
+
 .gameContent{
-    background-image: url('../assets/images/background3.png');
-    width: 1000px;
-    height: 620px;
-    background-size: cover;
-    margin-top: 50px;
-    display: flex;
+  background-image: url('../assets/images/background3.png');
+  width: 1000px;
+  height: 620px;
+  background-size: cover;
+  margin-top: 50px;
+  display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -144,7 +149,6 @@ body{
     align-items: center;
     justify-content: center;
     z-index: 10;
-    margin-left: 350px;
     margin-top: 57px;
   }
 
