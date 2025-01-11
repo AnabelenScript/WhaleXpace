@@ -80,39 +80,7 @@ body{
   height: 100%;
 }
 
-#controls{
-    margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px; 
-  font-family: "Press Start 2P", monospace;
-  font-size: 16px;
-  color: #ffffff; 
-}
 
-.control-item {
-    display: flex;
-    align-items: center;
-    gap: 5px; 
-  }
-  
-  .key {
-    padding: 5px 10px;
-    border: 2px solid #0051ff; 
-    color: #ffffff; 
-    background-color: transparent;
-    border-radius: 3px; 
-    text-shadow: 1px 1px 0px black, -1px -1px 0px black, -1px 1px 0px black, 1px -1px 0px black;
-  }
-  
-  span.control-item {
-    color: #ffffff; 
-  }
-  
-  #controls span {
-    text-shadow: 1px 1px 2px black;
-  }
   .overlay, .info {
     opacity: 1;
     transition: opacity 1s ease-in-out;
@@ -129,7 +97,7 @@ body{
     transition: transform 0.001s ease-in-out; 
     margin-top: 410px;
     margin-bottom: 20px;
-    width: 100%;
+    width: 150px;
   }
   
   .whale-image {
