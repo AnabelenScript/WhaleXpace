@@ -1,0 +1,66 @@
+
+.Mainbackground{
+    width: 100%;
+    height: 640px;
+    margin-left: -100px;
+    margin-top: 650px;
+    background-color: #212121;
+    position: absolute;
+    padding: 0;
+
+}
+
+*{
+    background-color: #212121;
+   
+}
+
+#controls{
+    width: 60%;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px; 
+    font-family: "Press Start 2P", monospace;
+    font-size: 16px;
+    color: #ffffff; 
+    padding: 10px;
+   margin-left: 30px;
+   margin-top: -30px;
+}
+
+.control-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+  
+  .key {
+    padding: 5px 10px;
+    height: 25px;
+    border: 2px solid #0051ff; 
+    color: #ffffff; 
+    background-color: transparent;
+    border-radius: 3px; 
+    text-shadow: 1px 1px 0px black, -1px -1px 0px black, -1px 1px 0px black, 1px -1px 0px black;
+  }
+  
+  span.control-item {
+    color: #ffffff; 
+  }
+
+  .control-item i{
+   padding: 0;
+   margin: 0;
+  }
+  
+  #controls span {
+    text-shadow: 1px 1px 2px black;
+    margin-top: 6px;
+  }
+  .overlay, .info {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
